@@ -1,0 +1,37 @@
+# ==============================================================================
+# .gitignore — Laboratorio 02: Cifrado, credenciales y comunicaciones seguras
+# ==============================================================================
+
+# Contenedores y datos de PostgreSQL
+pgdata/
+pgdata_lab01/
+pgdata_lab02/
+*.tar
+*.dump
+*.sql.gz
+
+# Archivos de credenciales y secretos (Regla 9.2 y 16)
+*.key
+*.pem
+*.crt
+*.csr
+*.pfx
+*.p12
+*.env
+*.env.*
+secrets/
+credenciales.txt
+sql/ejemplo-mala-practica.sql
+
+# Archivos temporales y de depuración
+*.log
+*.tmp
+*.bak
+.psql_history
+
+# Archivos del sistema operativo y editores
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
